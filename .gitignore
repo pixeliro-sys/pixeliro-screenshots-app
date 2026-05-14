@@ -1,0 +1,6 @@
+node_modules/
+# Generated output — run npm run gen to rebuild
+output/
+dist/
+# Keep preview/ committed for README display
+!preview/

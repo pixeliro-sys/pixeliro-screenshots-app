@@ -1,0 +1,33 @@
+{
+  "name": "pixeliro-screenshots-app",
+  "private": true,
+  "type": "module",
+  "description": "App Store screenshots for Color Picker · Pixel Color",
+  "scripts": {
+    "gen":               "tsx ../store-push/screenshots/gen/src/index.ts --config=./compose.config.json",
+    "gen:iphone":        "npm run gen -- --device=iphone",
+    "gen:ipad":          "npm run gen -- --device=ipad",
+    "gen:portrait":      "npm run gen -- --device=iphone,ipad",
+    "gen:landscape":     "npm run gen -- --device=iphone-landscape,ipad-landscape",
+    "gen:promo":         "npm run gen -- --device=apple-search-ads,google-ads-landscape,google-ads-square,google-ads-portrait",
+    "gen:promo:asa":     "npm run gen -- --device=apple-search-ads",
+    "gen:promo:gads":    "npm run gen -- --device=google-ads-landscape,google-ads-square,google-ads-portrait",
+    "gen:preview":       "npm run gen -- --device=iphone --locale=en-US",
+
+    "gen:locale:en":     "npm run gen -- --locale=en-US",
+    "gen:locale:vi":     "npm run gen -- --locale=vi",
+    "gen:locale:de":     "npm run gen -- --locale=de-DE",
+    "gen:locale:es":     "npm run gen -- --locale=es-ES",
+    "gen:locale:fr":     "npm run gen -- --locale=fr-FR",
+    "gen:locale:ja":     "npm run gen -- --locale=ja",
+    "gen:locale:ko":     "npm run gen -- --locale=ko",
+    "gen:locale:zh":     "npm run gen -- --locale=zh-Hans",
+
+    "gen:theme:brand":   "npm run gen -- --theme=input/brand-theme.txt",
+    "gen:theme:random":  "npm run gen -- --theme=random",
+    "gen:theme:preview": "npm run gen -- --theme=input/brand-theme.txt --device=iphone --locale=en-US"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0"
+  }
+}

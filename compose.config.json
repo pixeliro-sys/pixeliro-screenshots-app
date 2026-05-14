@@ -1,0 +1,803 @@
+{
+  "$comment": "Color Picker · Pixel Color — App Store & Google Play screenshot composer. Edit screens[] to change copy. Add a locale by adding its key to every eyebrow/headline/subheadline object. Drop raw simulator PNGs into input/<slug>/<device>.png.",
+  "outDir": "./output",
+  "inputDir": "./input",
+  "jpegQuality": 88,
+  "devices": {
+    "iphone": {
+      "label": "iPhone 6.9\"",
+      "width": 1290,
+      "height": 2796,
+      "sourceFile": "iphone.png",
+      "sourceFallbacks": [],
+      "eyebrowFontSize": 36,
+      "eyebrowTopY": 156,
+      "headlineFontSize": 132,
+      "subheadlineFontSize": 50,
+      "headlineTopY": 240,
+      "headlineMaxWidth": 1130,
+      "subheadlineGap": 60,
+      "screenshotRect": {
+        "x": 165,
+        "y": 740,
+        "width": 960,
+        "height": 2010
+      },
+      "screenshotCornerRadius": 168,
+      "frame": {
+        "style": "ios",
+        "color": "#0A0A0A",
+        "screenInset": 38,
+        "screenCornerRadius": 130,
+        "notch": {
+          "width": 340,
+          "height": 80,
+          "radius": 40,
+          "topOffset": 28
+        }
+      }
+    },
+    "ipad": {
+      "label": "iPad Pro 13\"",
+      "width": 2064,
+      "height": 2752,
+      "sourceFile": "ipad.png",
+      "sourceFallbacks": [
+        "iphone.png"
+      ],
+      "eyebrowFontSize": 38,
+      "eyebrowTopY": 168,
+      "headlineFontSize": 116,
+      "subheadlineFontSize": 52,
+      "headlineTopY": 248,
+      "headlineMaxWidth": 1700,
+      "subheadlineGap": 56,
+      "screenshotRect": {
+        "x": 312,
+        "y": 800,
+        "width": 1440,
+        "height": 1900
+      },
+      "screenshotCornerRadius": 100,
+      "frame": {
+        "style": "ios",
+        "color": "#0A0A0A",
+        "screenInset": 40,
+        "screenCornerRadius": 60
+      }
+    },
+    "android-phone": {
+      "label": "Android Phone (9:16)",
+      "width": 1080,
+      "height": 1920,
+      "sourceFile": "android.png",
+      "sourceFallbacks": [
+        "iphone.png"
+      ],
+      "eyebrowFontSize": 28,
+      "eyebrowTopY": 124,
+      "headlineFontSize": 104,
+      "subheadlineFontSize": 40,
+      "headlineTopY": 196,
+      "headlineMaxWidth": 900,
+      "subheadlineGap": 48,
+      "screenshotRect": {
+        "x": 100,
+        "y": 580,
+        "width": 880,
+        "height": 1280
+      },
+      "screenshotCornerRadius": 80,
+      "frame": {
+        "style": "android",
+        "color": "#111111",
+        "screenInset": 24,
+        "screenCornerRadius": 56,
+        "punchHole": {
+          "radius": 20,
+          "topOffset": 18
+        }
+      }
+    },
+    "android-tablet": {
+      "label": "Android Tablet (3:4)",
+      "width": 1600,
+      "height": 2560,
+      "sourceFile": "android-tablet.png",
+      "sourceFallbacks": [
+        "android.png",
+        "ipad.png",
+        "iphone.png"
+      ],
+      "eyebrowFontSize": 34,
+      "eyebrowTopY": 148,
+      "headlineFontSize": 118,
+      "subheadlineFontSize": 46,
+      "headlineTopY": 224,
+      "headlineMaxWidth": 1360,
+      "subheadlineGap": 52,
+      "screenshotRect": {
+        "x": 200,
+        "y": 720,
+        "width": 1200,
+        "height": 1740
+      },
+      "screenshotCornerRadius": 88,
+      "frame": {
+        "style": "android",
+        "color": "#111111",
+        "screenInset": 28,
+        "screenCornerRadius": 60,
+        "punchHole": {
+          "radius": 18,
+          "topOffset": 16
+        }
+      }
+    },
+    "iphone-landscape": {
+      "label": "iPhone 6.9\" Landscape",
+      "width": 2796,
+      "height": 1290,
+      "sourceFile": "iphone-landscape.png",
+      "sourceFallbacks": [
+        "iphone.png"
+      ],
+      "defaultStyle": "landscapeStack",
+      "eyebrowFontSize": 28,
+      "eyebrowTopY": 80,
+      "headlineFontSize": 100,
+      "subheadlineFontSize": 38,
+      "headlineTopY": 136,
+      "headlineMaxWidth": 2500,
+      "subheadlineGap": 20,
+      "screenshotRect": {
+        "x": 448,
+        "y": 400,
+        "width": 1900,
+        "height": 840
+      },
+      "screenshotCornerRadius": 64,
+      "frame": {
+        "style": "ios",
+        "color": "#0A0A0A",
+        "screenInset": 22,
+        "screenCornerRadius": 42,
+        "notch": {
+          "width": 340,
+          "height": 72,
+          "radius": 36,
+          "topOffset": 16,
+          "placement": "left"
+        }
+      }
+    },
+    "ipad-landscape": {
+      "label": "iPad Pro 13\" Landscape",
+      "width": 2752,
+      "height": 2064,
+      "sourceFile": "ipad.png",
+      "sourceFallbacks": [
+        "iphone.png"
+      ],
+      "defaultStyle": "magazineCard",
+      "eyebrowFontSize": 30,
+      "eyebrowTopY": 548,
+      "headlineFontSize": 100,
+      "subheadlineFontSize": 42,
+      "headlineTopY": 624,
+      "headlineMaxWidth": 1480,
+      "subheadlineGap": 44,
+      "screenshotRect": {
+        "x": 1900,
+        "y": 460,
+        "width": 720,
+        "height": 960
+      },
+      "screenshotCornerRadius": 52,
+      "frame": {
+        "style": "ios",
+        "color": "#0A0A0A",
+        "screenInset": 28,
+        "screenCornerRadius": 24
+      }
+    },
+    "android-phone-landscape": {
+      "label": "Android Phone Landscape (16:9)",
+      "width": 1920,
+      "height": 1080,
+      "sourceFile": "android.png",
+      "sourceFallbacks": [
+        "iphone.png"
+      ],
+      "defaultStyle": "magazineCard",
+      "eyebrowFontSize": 22,
+      "eyebrowTopY": 296,
+      "headlineFontSize": 76,
+      "subheadlineFontSize": 30,
+      "headlineTopY": 348,
+      "headlineMaxWidth": 1020,
+      "subheadlineGap": 28,
+      "screenshotRect": {
+        "x": 1440,
+        "y": 80,
+        "width": 400,
+        "height": 920
+      },
+      "screenshotCornerRadius": 56,
+      "frame": {
+        "style": "android",
+        "color": "#111111",
+        "screenInset": 16,
+        "screenCornerRadius": 40,
+        "punchHole": {
+          "radius": 14,
+          "topOffset": 12
+        }
+      }
+    },
+    "android-tablet-landscape": {
+      "label": "Android Tablet Landscape (16:10)",
+      "width": 2560,
+      "height": 1600,
+      "sourceFile": "android-tablet.png",
+      "sourceFallbacks": [
+        "android.png",
+        "ipad.png",
+        "iphone.png"
+      ],
+      "defaultStyle": "magazineCard",
+      "eyebrowFontSize": 28,
+      "eyebrowTopY": 436,
+      "headlineFontSize": 96,
+      "subheadlineFontSize": 38,
+      "headlineTopY": 512,
+      "headlineMaxWidth": 1360,
+      "subheadlineGap": 36,
+      "screenshotRect": {
+        "x": 1840,
+        "y": 200,
+        "width": 600,
+        "height": 1200
+      },
+      "screenshotCornerRadius": 56,
+      "frame": {
+        "style": "android",
+        "color": "#111111",
+        "screenInset": 20,
+        "screenCornerRadius": 36,
+        "punchHole": {
+          "radius": 14,
+          "topOffset": 12
+        }
+      }
+    },
+    "google-play-feature": {
+      "label": "Google Play Feature Graphic",
+      "width": 1024,
+      "height": 500,
+      "sourceFile": "promo.png",
+      "sourceFallbacks": [],
+      "showFrame": false,
+      "defaultStyle": "landscapeStack",
+      "eyebrowFontSize": 18,
+      "eyebrowTopY": 68,
+      "headlineFontSize": 72,
+      "subheadlineFontSize": 26,
+      "headlineTopY": 108,
+      "headlineMaxWidth": 900,
+      "subheadlineGap": 14,
+      "screenshotRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "screenshotCornerRadius": 0,
+      "frame": {
+        "style": "ios",
+        "color": "#000",
+        "screenInset": 0,
+        "screenCornerRadius": 0
+      }
+    },
+    "apple-search-ads": {
+      "label": "Apple Search Ads Banner",
+      "width": 2796,
+      "height": 900,
+      "sourceFile": "promo.png",
+      "sourceFallbacks": [],
+      "showFrame": false,
+      "defaultStyle": "landscapeStack",
+      "eyebrowFontSize": 22,
+      "eyebrowTopY": 188,
+      "headlineFontSize": 80,
+      "subheadlineFontSize": 30,
+      "headlineTopY": 248,
+      "headlineMaxWidth": 2400,
+      "subheadlineGap": 16,
+      "screenshotRect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "screenshotCornerRadius": 0,
+      "frame": {
+        "style": "ios",
+        "color": "#000",
+        "screenInset": 0,
+        "screenCornerRadius": 0
+      }
+    },
+
+    "google-ads-landscape": {
+      "label": "Google Ads Landscape (1200×628)",
+      "width": 1200,
+      "height": 628,
+      "sourceFile": "promo.png",
+      "sourceFallbacks": [],
+      "showFrame": false,
+      "defaultStyle": "landscapeStack",
+      "eyebrowFontSize": 16,
+      "eyebrowTopY": 128,
+      "headlineFontSize": 64,
+      "subheadlineFontSize": 22,
+      "headlineTopY": 176,
+      "headlineMaxWidth": 1080,
+      "subheadlineGap": 12,
+      "screenshotRect": { "x": 0, "y": 0, "width": 0, "height": 0 },
+      "screenshotCornerRadius": 0,
+      "frame": { "style": "ios", "color": "#000", "screenInset": 0, "screenCornerRadius": 0 }
+    },
+
+    "google-ads-square": {
+      "label": "Google Ads Square (1200×1200)",
+      "width": 1200,
+      "height": 1200,
+      "sourceFile": "promo.png",
+      "sourceFallbacks": [],
+      "showFrame": false,
+      "defaultStyle": "boldEditorial",
+      "eyebrowFontSize": 20,
+      "eyebrowTopY": 380,
+      "headlineFontSize": 88,
+      "subheadlineFontSize": 30,
+      "headlineTopY": 440,
+      "headlineMaxWidth": 1040,
+      "subheadlineGap": 20,
+      "screenshotRect": { "x": 0, "y": 0, "width": 0, "height": 0 },
+      "screenshotCornerRadius": 0,
+      "frame": { "style": "ios", "color": "#000", "screenInset": 0, "screenCornerRadius": 0 }
+    },
+
+    "google-ads-portrait": {
+      "label": "Google Ads Portrait (1080×1920)",
+      "width": 1080,
+      "height": 1920,
+      "sourceFile": "promo.png",
+      "sourceFallbacks": [],
+      "showFrame": false,
+      "defaultStyle": "boldEditorial",
+      "eyebrowFontSize": 26,
+      "eyebrowTopY": 540,
+      "headlineFontSize": 96,
+      "subheadlineFontSize": 36,
+      "headlineTopY": 620,
+      "headlineMaxWidth": 940,
+      "subheadlineGap": 28,
+      "screenshotRect": { "x": 0, "y": 0, "width": 0, "height": 0 },
+      "screenshotCornerRadius": 0,
+      "frame": { "style": "ios", "color": "#000", "screenInset": 0, "screenCornerRadius": 0 }
+    }
+  },
+  "typography": {
+    "headlineFontFamily": "SF Pro Display, -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+    "subheadlineFontFamily": "SF Pro Text, -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
+    "headlineWeight": 800,
+    "subheadlineWeight": 500,
+    "headlineLetterSpacing": -3.0
+  },
+  "screens": [
+    {
+      "slug": "01",
+      "background": {
+        "from": "#0F172A",
+        "to": "#9333EA",
+        "mesh": "#F472B6"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#FBCFE8",
+      "eyebrow": {
+        "en-US": "PICK & EXTRACT",
+        "vi": "LẤY MÀU TỪ ẢNH",
+        "de-DE": "AUS DEM FOTO",
+        "es-ES": "EXTRAER",
+        "fr-FR": "EXTRAIRE",
+        "ja": "写真から抽出",
+        "ko": "사진에서 추출",
+        "zh-Hans": "从照片提取"
+      },
+      "headline": {
+        "en-US": "Pick *any color* from a photo",
+        "vi": "Lấy *bất kỳ màu* từ ảnh",
+        "de-DE": "*Jede Farbe* aus dem Foto",
+        "es-ES": "Cualquier *color de la foto*",
+        "fr-FR": "Toute *couleur d'une photo*",
+        "ja": "*どんな色* も写真から抽出",
+        "ko": "*어떤 색* 이든 사진에서 추출",
+        "zh-Hans": "*任意颜色* 一拍即取"
+      },
+      "subheadline": {
+        "en-US": "Tap a pixel, get the exact hex.",
+        "vi": "Chạm vào pixel, nhận đúng mã hex.",
+        "de-DE": "Pixel antippen, exakter HEX.",
+        "es-ES": "Toca un pixel, obtén el hex exacto.",
+        "fr-FR": "Touchez un pixel, obtenez le hex exact.",
+        "ja": "ピクセルをタップして正確な HEX。",
+        "ko": "픽셀을 탭하면 정확한 HEX.",
+        "zh-Hans": "点击像素, 即得精确 HEX。"
+      }
+    },
+    {
+      "slug": "02",
+      "style": "magazineCard",
+      "background": {
+        "from": "#312E81",
+        "to": "#0E7490",
+        "mesh": "#A78BFA"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#FDE68A",
+      "eyebrow": {
+        "en-US": "AI COLOR HUB",
+        "vi": "AI COLOR HUB",
+        "de-DE": "AI COLOR HUB",
+        "es-ES": "AI COLOR HUB",
+        "fr-FR": "AI COLOR HUB",
+        "ja": "AI カラーハブ",
+        "ko": "AI 컬러 허브",
+        "zh-Hans": "AI 色彩中心"
+      },
+      "headline": {
+        "en-US": "Chat with an *AI color consultant*",
+        "vi": "Trò chuyện với *cố vấn màu AI*",
+        "de-DE": "Chatte mit einem *KI-Farbberater*",
+        "es-ES": "Chatea con un *consultor de color IA*",
+        "fr-FR": "Discute avec un *consultant couleur IA*",
+        "ja": "*AIカラーコンサルタント*と対話",
+        "ko": "*AI 컬러 컨설턴트*와 대화",
+        "zh-Hans": "和 *AI 色彩顾问* 对话"
+      },
+      "subheadline": {
+        "en-US": "/ask · /gen_prompt · stays on topic.",
+        "vi": "/ask · /gen_prompt · luôn bám chủ đề.",
+        "de-DE": "/ask · /gen_prompt · bleibt beim Thema.",
+        "es-ES": "/ask · /gen_prompt · siempre al tema.",
+        "fr-FR": "/ask · /gen_prompt · reste dans le sujet.",
+        "ja": "/ask · /gen_prompt · カラーの話に集中。",
+        "ko": "/ask · /gen_prompt · 컬러에만 집중.",
+        "zh-Hans": "/ask · /gen_prompt · 紧扣主题。"
+      }
+    },
+    {
+      "slug": "03",
+      "background": {
+        "from": "#0F172A",
+        "to": "#65A30D",
+        "mesh": "#84CC16"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#D9F99D",
+      "eyebrow": {
+        "en-US": "AI WALLPAPER",
+        "vi": "AI WALLPAPER",
+        "de-DE": "AI WALLPAPER",
+        "es-ES": "AI WALLPAPER",
+        "fr-FR": "AI WALLPAPER",
+        "ja": "AI ウォールペーパー",
+        "ko": "AI 월페이퍼",
+        "zh-Hans": "AI 壁纸"
+      },
+      "headline": {
+        "en-US": "Your brand, *as wallpaper*",
+        "vi": "Thương hiệu *thành hình nền*",
+        "de-DE": "Marke *als Wallpaper*",
+        "es-ES": "Tu marca *como wallpaper*",
+        "fr-FR": "Votre marque *en wallpaper*",
+        "ja": "ブランドが *壁紙に*",
+        "ko": "브랜드를 *월페이퍼로*",
+        "zh-Hans": "品牌色 *变壁纸*"
+      },
+      "subheadline": {
+        "en-US": "Drop a palette. Get a cinematic 9:16.",
+        "vi": "Thả bảng màu. Nhận hình 9:16 điện ảnh.",
+        "de-DE": "Palette wählen. Ein cineastisches 9:16.",
+        "es-ES": "Suelta una paleta. Obtén un 9:16 cinemático.",
+        "fr-FR": "Déposez une palette. Recevez un 9:16 cinéma.",
+        "ja": "パレットを渡せば、映画的な 9:16 が完成。",
+        "ko": "팔레트만 넣으면 시네마틱 9:16 완성.",
+        "zh-Hans": "传入调色板, 生成电影感 9:16 壁纸。"
+      }
+    },
+    {
+      "slug": "04",
+      "background": {
+        "from": "#8B5CF6",
+        "to": "#EC4899",
+        "mesh": "#06B6D4"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#FFE66D",
+      "eyebrow": {
+        "en-US": "STUDIO",
+        "vi": "STUDIO",
+        "de-DE": "STUDIO",
+        "es-ES": "STUDIO",
+        "fr-FR": "STUDIO",
+        "ja": "スタジオ",
+        "ko": "스튜디오",
+        "zh-Hans": "工作室"
+      },
+      "headline": {
+        "en-US": "Palettes you'll *actually use*",
+        "vi": "Bảng màu *bạn sẽ dùng*",
+        "de-DE": "Paletten, die du *wirklich nutzt*",
+        "es-ES": "Paletas que *realmente usarás*",
+        "fr-FR": "Des palettes *vraiment utiles*",
+        "ja": "*本当に使える* パレット",
+        "ko": "*실제로 쓰는* 팔레트",
+        "zh-Hans": "*真正用得上* 的调色板"
+      },
+      "subheadline": {
+        "en-US": "Lock, drag, reroll, export.",
+        "vi": "Khoá, kéo, roll lại, xuất.",
+        "de-DE": "Sperren, ziehen, neu mischen, exportieren.",
+        "es-ES": "Bloquear, arrastrar, remezclar, exportar.",
+        "fr-FR": "Verrouiller, glisser, relancer, exporter.",
+        "ja": "ロック、ドラッグ、リロール、書き出し。",
+        "ko": "잠금, 드래그, 리롤, 내보내기.",
+        "zh-Hans": "锁定、拖动、重抽、导出。"
+      }
+    },
+    {
+      "slug": "05",
+      "background": {
+        "from": "#FB923C",
+        "to": "#DC2626",
+        "mesh": "#7C2D12"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#FFF8B8",
+      "eyebrow": {
+        "en-US": "HARMONY",
+        "vi": "HOÀ SẮC",
+        "de-DE": "HARMONIE",
+        "es-ES": "ARMONÍA",
+        "fr-FR": "HARMONIE",
+        "ja": "ハーモニー",
+        "ko": "조화",
+        "zh-Hans": "配色"
+      },
+      "headline": {
+        "en-US": "Find *perfect* harmonies",
+        "vi": "Tìm hoà sắc *hoàn hảo*",
+        "de-DE": "Finde *perfekte* Harmonien",
+        "es-ES": "Encuentra armonías *perfectas*",
+        "fr-FR": "Trouvez des harmonies *parfaites*",
+        "ja": "*完璧な* 配色を発見",
+        "ko": "*완벽한* 조화를 찾아내세요",
+        "zh-Hans": "找到 *完美* 配色"
+      },
+      "subheadline": {
+        "en-US": "Triadic, analogous, complementary.",
+        "vi": "Tam giác, tương đồng, bổ túc.",
+        "de-DE": "Triadisch, analog, komplementär.",
+        "es-ES": "Triádicas, análogas, complementarias.",
+        "fr-FR": "Triadiques, analogues, complémentaires.",
+        "ja": "トライアド、類似、補色。",
+        "ko": "삼각, 유사, 보색.",
+        "zh-Hans": "三角、类比、互补。"
+      }
+    },
+    {
+      "slug": "06",
+      "background": {
+        "from": "#14B8A6",
+        "to": "#A855F7",
+        "mesh": "#F59E0B"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#FCD34D",
+      "eyebrow": {
+        "en-US": "GRADIENTS",
+        "vi": "GRADIENT",
+        "de-DE": "VERLÄUFE",
+        "es-ES": "GRADIENTES",
+        "fr-FR": "DÉGRADÉS",
+        "ja": "グラデーション",
+        "ko": "그라디언트",
+        "zh-Hans": "渐变"
+      },
+      "headline": {
+        "en-US": "Gradients *ready to ship*",
+        "vi": "Gradient *sẵn để dùng*",
+        "de-DE": "Verläufe *fertig zum Einsatz*",
+        "es-ES": "Gradientes *listos para usar*",
+        "fr-FR": "Dégradés *prêts à l'emploi*",
+        "ja": "*すぐ使える* グラデーション",
+        "ko": "*바로 쓰는* 그라디언트",
+        "zh-Hans": "*即用即走* 的渐变"
+      },
+      "subheadline": {
+        "en-US": "Copy CSS, Tailwind, SwiftUI.",
+        "vi": "Copy CSS, Tailwind, SwiftUI.",
+        "de-DE": "CSS, Tailwind, SwiftUI kopieren.",
+        "es-ES": "Copia CSS, Tailwind, SwiftUI.",
+        "fr-FR": "Copiez CSS, Tailwind, SwiftUI.",
+        "ja": "CSS、Tailwind、SwiftUI をコピー。",
+        "ko": "CSS, Tailwind, SwiftUI 복사.",
+        "zh-Hans": "复制 CSS、Tailwind、SwiftUI。"
+      }
+    },
+    {
+      "slug": "07",
+      "background": {
+        "from": "#3B82F6",
+        "to": "#1E40AF",
+        "mesh": "#06B6D4"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#7DF9FF",
+      "eyebrow": {
+        "en-US": "MAGAZINE",
+        "vi": "TẠP CHÍ",
+        "de-DE": "MAGAZIN",
+        "es-ES": "REVISTA",
+        "fr-FR": "MAGAZINE",
+        "ja": "マガジン",
+        "ko": "매거진",
+        "zh-Hans": "色彩杂志"
+      },
+      "headline": {
+        "en-US": "Color stories, *every week*",
+        "vi": "Câu chuyện màu, *mỗi tuần*",
+        "de-DE": "Farbgeschichten, *jede Woche*",
+        "es-ES": "Historias de color, *cada semana*",
+        "fr-FR": "Histoires de couleurs, *chaque semaine*",
+        "ja": "毎週届く *カラーストーリー*",
+        "ko": "*매주* 만나는 컬러 스토리",
+        "zh-Hans": "*每周* 一篇色彩故事"
+      },
+      "subheadline": {
+        "en-US": "Editorial palettes from real photos.",
+        "vi": "Bảng màu biên tập từ ảnh thật.",
+        "de-DE": "Redaktionelle Paletten aus echten Fotos.",
+        "es-ES": "Paletas editoriales a partir de fotos reales.",
+        "fr-FR": "Palettes éditoriales à partir de vraies photos.",
+        "ja": "実写から生成された編集パレット。",
+        "ko": "실사진에서 만든 에디토리얼 팔레트.",
+        "zh-Hans": "由真实照片提取的编辑级调色板。"
+      }
+    },
+    {
+      "slug": "08",
+      "background": {
+        "from": "#22C55E",
+        "to": "#0891B2",
+        "mesh": "#FB923C"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#FED7AA",
+      "eyebrow": {
+        "en-US": "EXTRACT",
+        "vi": "TRÍCH XUẤT",
+        "de-DE": "EXTRAHIEREN",
+        "es-ES": "EXTRAER",
+        "fr-FR": "EXTRAIRE",
+        "ja": "抽出",
+        "ko": "추출",
+        "zh-Hans": "图像提取"
+      },
+      "headline": {
+        "en-US": "Pull palettes *from photos*",
+        "vi": "Lấy bảng màu *từ ảnh*",
+        "de-DE": "Paletten *aus Fotos*",
+        "es-ES": "Paletas *desde tus fotos*",
+        "fr-FR": "Palettes *depuis vos photos*",
+        "ja": "*写真から* パレットを抽出",
+        "ko": "*사진에서* 팔레트 추출",
+        "zh-Hans": "*从照片中* 提取调色板"
+      },
+      "subheadline": {
+        "en-US": "Drop a photo. Get clean swatches.",
+        "vi": "Thả ảnh. Nhận swatch sạch.",
+        "de-DE": "Foto reinziehen. Saubere Swatches.",
+        "es-ES": "Suelta una foto. Obtén swatches limpios.",
+        "fr-FR": "Déposez une photo. Swatches nets.",
+        "ja": "写真をドロップ。きれいなスウォッチに。",
+        "ko": "사진을 드롭. 깔끔한 스와치 완성.",
+        "zh-Hans": "放入照片，获取干净色板。"
+      }
+    },
+    {
+      "slug": "09",
+      "background": {
+        "from": "#1E1B4B",
+        "to": "#7C3AED",
+        "mesh": "#22D3EE"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#A7F3D0",
+      "eyebrow": {
+        "en-US": "BRAND",
+        "vi": "THƯƠNG HIỆU",
+        "de-DE": "MARKE",
+        "es-ES": "MARCA",
+        "fr-FR": "MARQUE",
+        "ja": "ブランド",
+        "ko": "브랜드",
+        "zh-Hans": "品牌"
+      },
+      "headline": {
+        "en-US": "Brand colors, *generated*",
+        "vi": "Màu thương hiệu *tạo bằng AI*",
+        "de-DE": "Markenfarben, *generiert*",
+        "es-ES": "Colores de marca, *generados*",
+        "fr-FR": "Couleurs de marque, *générées*",
+        "ja": "ブランドカラーを *AI で生成*",
+        "ko": "브랜드 컬러, *AI 생성*",
+        "zh-Hans": "品牌色, *AI 生成*"
+      },
+      "subheadline": {
+        "en-US": "Describe your brand. Get a system.",
+        "vi": "Mô tả thương hiệu. Nhận trọn bộ.",
+        "de-DE": "Beschreibe deine Marke. Erhalte ein System.",
+        "es-ES": "Describe tu marca. Obtén un sistema.",
+        "fr-FR": "Décrivez votre marque. Obtenez un système.",
+        "ja": "ブランドを入力。システムが完成。",
+        "ko": "브랜드를 설명하세요. 시스템이 완성.",
+        "zh-Hans": "描述你的品牌。生成完整系统。"
+      }
+    },
+    {
+      "slug": "10",
+      "background": {
+        "from": "#1F2937",
+        "to": "#0EA5E9",
+        "mesh": "#A3E635"
+      },
+      "textColor": "#FFFFFF",
+      "accentColor": "#FDE68A",
+      "eyebrow": {
+        "en-US": "PIXEL ZOOM",
+        "vi": "PHÓNG ĐẠI PIXEL",
+        "de-DE": "PIXEL ZOOM",
+        "es-ES": "ZOOM PIXEL",
+        "fr-FR": "ZOOM PIXEL",
+        "ja": "ピクセルズーム",
+        "ko": "픽셀 줌",
+        "zh-Hans": "像素放大"
+      },
+      "headline": {
+        "en-US": "Pick the *exact* pixel",
+        "vi": "Chấm *đúng* pixel",
+        "de-DE": "Genau *diesen Pixel* treffen",
+        "es-ES": "Elige el pixel *exacto*",
+        "fr-FR": "Choisissez le pixel *exact*",
+        "ja": "*ピクセル単位* で正確に",
+        "ko": "*정확한 픽셀* 을 그대로",
+        "zh-Hans": "精准到 *单像素*"
+      },
+      "subheadline": {
+        "en-US": "Crosshair zoom, live hex, 5 swatches.",
+        "vi": "Tâm ngắm phóng to, hex trực tiếp, 5 swatch.",
+        "de-DE": "Fadenkreuz-Zoom, Live-Hex, 5 Swatches.",
+        "es-ES": "Zoom con cruz, hex en vivo, 5 swatches.",
+        "fr-FR": "Zoom à la croix, hex en direct, 5 swatches.",
+        "ja": "クロスヘア拡大、ライブ HEX、即 5 色。",
+        "ko": "크로스헤어 줌, 실시간 HEX, 즉시 5색.",
+        "zh-Hans": "十字放大, 实时 HEX, 即取 5 色。"
+      }
+    }
+  ]
+}
