@@ -9,7 +9,7 @@
 
 | | |
 |---|---|
-| iOS App Store | [Color Picker · Pixel Color](https://apps.apple.com/app/pixel-color-color-picker/id1546327877) |
+| iOS App Store | [Color Picker · Pixel Color](https://apps.apple.com/us/app/color-picker-pixel-color/id1400884755) |
 | Web | [pixeliro.com](https://pixeliro.com) |
 | Brand palettes | [pixeliro.com/brand-palettes](https://pixeliro.com/brand-palettes) |
 | Brand generator | [pixeliro.com/brand-color-palette](https://pixeliro.com/brand-color-palette) |
